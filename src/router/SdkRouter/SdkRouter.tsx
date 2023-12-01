@@ -34,6 +34,7 @@ import {
   OpenSearchApp,
   ArgoWorkflow,
   LoginPage,
+  UserPage
 } from '@views/index';
 
 function SdkRouter() {
@@ -52,6 +53,15 @@ function SdkRouter() {
               <Route
                 path="*"
                 element={<Navigate to="/home/overview" replace />}
+              />
+              <Route path="/user/*" element={<UserPage onLanguageChange={setLanguage}/>} />
+              <Route
+                path="*"
+                element={<Navigate to="general" replace />}
+              />
+              <Route
+                path="*"
+                element={<Navigate to="password" replace />}
               />
               <Route path="/apps/dashboard" element={<OpenSearchApp />} />
               <Route path="/apps/workflow" element={<ArgoWorkflow />} />

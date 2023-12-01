@@ -230,5 +230,22 @@
   "ConfigInitialColumns.DefaultColumnsData.name": "Name",
   "ConfigInitialColumns.DefaultColumnsData.createdAt": "Created",
   "ConfigInitialColumns.DefaultColumnsData.size": "Size (MB)",
-  "ConfigInitialColumns.DefaultColumnsData.download": "Download"
+  "ConfigInitialColumns.DefaultColumnsData.download": "Download",
+  "UserPage.title": "User Settings",
+  "UserPage.General": "General",
+  "UserPage.General.profile": "Profile", 
+  "UserPage.General.username": "Username", 
+  "UserPage.General.email": "Email", 
+  "UserPage.General.language": "Language", 
+  "UserPage.General.english": "English", 
+  "UserPage.General.german": "German", 
+  "UserPage.cancel-button": "Cancel", 
+  "UserPage.save-button": "Save", 
+  "UserPage.Password": "Password",
+  "UserPage.Password.old-password-title": "Old Password",
+  "UserPage.Password.old-password-placeholder": "Enter your old password",
+  "UserPage.Password.new-password-title": "New Password",
+  "UserPage.Password.new-password-placeholder": "Enter your new password",
+  "UserPage.Password.repeat-password-title": "Repeat Password",
+  "UserPage.Password.repeat-password-placeholder": "Repeat your new password"
 }

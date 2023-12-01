@@ -22,6 +22,7 @@ import LoginPage from './LoginPage/LoginPage';
 import AppPage from './AppPage/AppPage/AppPage';
 import MembersTable from './Modal/MembersTab/MembersTable/MembersTable';
 import OrgSpaceModalParent from './Modal/OrgSpaceModalParent/OrgSpaceModalParent';
+import UserPage from './AppPage/UserPage/UserPage';
 
 export * from './Modal/tabComponents';
 
@@ -34,4 +35,5 @@ export {
   AppPage,
   MembersTable,
   OrgSpaceModalParent,
+  UserPage
 };

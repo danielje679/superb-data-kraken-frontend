@@ -24,7 +24,7 @@ import {
   OverlayTrigger,
   Tooltip,
 } from 'react-bootstrap';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useOidc } from '@axa-fr/react-oidc';
 import { useIntl } from 'react-intl';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
@@ -59,6 +59,12 @@ function Layout({ onLanguageChange }: LayoutProps) {
     onLanguageChange(language);
     setLanguageActive(!languageActive);
   };
+
+  const navigate = useNavigate()
+
+  const handleUserPageNavigation = () => {
+    navigate("/user")
+  }
 
   const handleToggler = (value: boolean): boolean => !value;
 
@@ -111,6 +117,15 @@ function Layout({ onLanguageChange }: LayoutProps) {
               color="text-light"
               dropdownItems={
                 <>
+                <Dropdown.Item
+                    data-testid="user-page-button"
+                    onClick={handleUserPageNavigation}
+                  > 
+                    {formatMessage({
+                    id: 'UserPage.title',
+                    })}
+                  </Dropdown.Item>
+                  <Dropdown.Divider />
                   <Dropdown.Item
                     data-testid="logout-button"
                     onClick={() => logout(`${location.pathname}`)}
